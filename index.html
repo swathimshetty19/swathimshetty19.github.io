@@ -1,10 +1,163 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Page</title>
-  </head>
-  <body>
-    <h1>Hello World 👋</h1>
-    <p>This is my GitHub Page.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swathi | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 26px;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 8px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .skill {
+      background: #1f2937;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 20px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm Swathi 👋</h1>
+    <p>
+      Computer Science student interested in Machine Learning Systems, Backend Infrastructure,
+      and Distributed Cloud Platforms. I enjoy building scalable systems and practical ML tools.
+    </p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>Skillset</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Golang</span>
+        <span class="skill">Kubernetes</span>
+        <span class="skill">Docker</span>
+        <span class="skill">Azure</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Distributed Systems</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <div class="card">
+          <h3>KubeTrace</h3>
+          <p>
+            Inference-aware CI/CD system for ML microservices running on Kubernetes clusters.
+            Focused on performance tracing and rollout safety.
+          </p>
+          <a href="https://github.com/yourusername/kubetrace" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="card">
+          <h3>AutoScale-MPI</h3>
+          <p>
+            Elastic distributed training framework using PyTorch and Kubernetes to
+            dynamically scale compute resources during training.
+          </p>
+          <a href="https://github.com/yourusername/autoscale-mpi" target="_blank">View on GitHub →</a>
+        </div>
+
+        <div class="card">
+          <h3>Cloud Microservice Platform</h3>
+          <p>
+            Backend microservice platform powered by Golang and AKS with monitoring,
+            logging, and autoscaling capabilities.
+          </p>
+          <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub →</a>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Swathi • Built with GitHub Pages
+  </footer>
+
+</body>
 </html>
